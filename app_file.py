@@ -62,12 +62,10 @@ def main():
         figs,returns,risks,risklevel,assets=Equal.figure(int_features)
         st.dataframe(assets)      
     
-    link = '[GitHub](http://github.com)'
-    st.markdown(link, unsafe_allow_html=True)
     
-    if st.button('Go to Streamlit'):
-        js = "window.open('https://www.streamlit.io/')"  # New tab or window
-        js = "window.location.href = 'https://www.streamlit.io/'"  # Current tab
+    if st.button('Go to the Github Repository where the code is built'):
+        js = "window.open('https://github.com/AshwinKumar199806/Portfolio-Construction')"  # New tab or window
+        js = "window.location.href = 'https://github.com/AshwinKumar199806/Portfolio-Construction'"  # Current tab
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
