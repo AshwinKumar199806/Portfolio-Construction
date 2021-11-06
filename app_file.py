@@ -64,8 +64,8 @@ def main():
     
     
     if st.button('Go to the Github Repository where the code is built'):
-        js = "window.open('https://github.com/AshwinKumar199806/Portfolio-Construction')"  # New tab or window
-        js = "window.location.href = 'https://github.com/AshwinKumar199806/Portfolio-Construction'"  # Current tab
+        js = "window.open('https://github.com/AshwinKumar199806/Portfolio-Construction/')"  # New tab or window
+        js = "window.location.href = 'https://github.com/AshwinKumar199806/Portfolio-Construction/'"  # Current tab
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
