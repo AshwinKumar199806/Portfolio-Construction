@@ -9,7 +9,6 @@ import Equal
 import Optimal
 import Minimal
 import copy
-from bokeh.models.widgets import Div
 
 def main():
     st.title("Portfolio Construction of Stocks listed in NSE")
@@ -61,15 +60,6 @@ def main():
         st.subheader("Expected Return and Volatility of Individual Stocks")
         figs,returns,risks,risklevel,assets=Equal.figure(int_features)
         st.dataframe(assets)      
-    
-    
-    if st.button('Go to the Github Repository where the code is built'):
-        js = "window.open('https://share.streamlit.io/ashwinkumar199806/food-reviews-/main/app_file.py')"  # New tab or window
-        js = "window.location.href = 'https://share.streamlit.io/ashwinkumar199806/food-reviews-/main/app_file.py'"  # Current tab
-        html = '<img src onerror="{}">'.format(js)
-        div = Div(text=html)
-        st.bokeh_chart(div)
-
  
 
 if __name__ == "__main__":
