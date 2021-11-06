@@ -9,6 +9,7 @@ import Equal
 import Optimal
 import Minimal
 import copy
+from bokeh.models.widgets import Div
 
 def main():
     st.title("Portfolio Construction of Stocks listed in NSE")
@@ -60,8 +61,17 @@ def main():
         st.subheader("Expected Return and Volatility of Individual Stocks")
         figs,returns,risks,risklevel,assets=Equal.figure(int_features)
         st.dataframe(assets)      
+    
     link = '[GitHub](http://github.com)'
     st.markdown(link, unsafe_allow_html=True)
+    
+    if st.button('Go to Streamlit'):
+        js = "window.open('https://www.streamlit.io/')"  # New tab or window
+        js = "window.location.href = 'https://www.streamlit.io/'"  # Current tab
+        html = '<img src onerror="{}">'.format(js)
+        div = Div(text=html)
+        st.bokeh_chart(div)
+
  
 
 if __name__ == "__main__":
