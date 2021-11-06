@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
 
 
 import numpy as np
@@ -79,13 +75,9 @@ def figure(tickers):
     return fig,min_vol_port['Returns']*100,min_vol_port['Volatility'],risklevel,assets
 
 
-# In[11]:
-
-
 figure(['TATASTEEL.NS', 'HINDALCO.NS', 'JSWSTEEL.NS', 'ADANIENT.NS', 'COALINDIA.NS'])
 
 
-# In[ ]:
 
 
 
