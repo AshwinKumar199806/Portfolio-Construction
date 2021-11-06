@@ -64,8 +64,8 @@ def main():
     
     
     if st.button('Go to the Github Repository where the code is built'):
-        js = "window.open('https://github.com/AshwinKumar199806')"  # New tab or window
-        js = "window.location.href = 'https://github.com/AshwinKumar199806'"  # Current tab
+        js = "window.open('https://share.streamlit.io/ashwinkumar199806/food-reviews-/main/app_file.py')"  # New tab or window
+        js = "window.location.href = 'https://share.streamlit.io/ashwinkumar199806/food-reviews-/main/app_file.py'"  # Current tab
         html = '<img src onerror="{}">'.format(js)
         div = Div(text=html)
         st.bokeh_chart(div)
