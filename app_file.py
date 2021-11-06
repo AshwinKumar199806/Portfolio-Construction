@@ -11,8 +11,9 @@ import Minimal
 import copy
 
 def main():
-    st.title("Portfolio Construction")
+    st.title("Portfolio Construction of Stocks listed in NSE")
     st.subheader("Enter the tickers of stocks separated by commas")
+    st.write("Only enter the tickers of stocks which are listed in NSE")
     stocks = st.text_area(label = "Stocks")
     a=stocks.split(',')
     int_features = [str(x)+".NS" for x in a]   
