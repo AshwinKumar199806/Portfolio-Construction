@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
 
 import numpy as np
 import pandas as pd
@@ -14,9 +9,7 @@ from nsetools import Nse
 import random
 import pickle
 from datetime import datetime
-#from moviepy.video.io.bindings import mplfig_to_npimage
-#"""As we can see, there are a lot of different columns for different prices throughout the day, but we will only focus on the ‘Close’ column. This colum gives us the closing price of company’s stock on the given day."""
-#tickers=['TATASTEEL.NS', 'HINDALCO.NS', 'JSWSTEEL.NS', 'ADANIENT.NS', 'COALINDIA.NS']
+
 def figure(tickers):
     raw_data = YahooFinancials(tickers).get_historical_price_data('2016-01-01',datetime.today().strftime('%Y-%m-%d'),"daily")
     maindf = pd.DataFrame()
@@ -81,14 +74,6 @@ def figure(tickers):
         risklevel="Very Aggressive"
     return fig,optimal_risky_port['Returns']*100,optimal_risky_port['Volatility'],risklevel,assets
 
-
-# In[7]:
-
-
-figure(['TATASTEEL.NS', 'HINDALCO.NS', 'JSWSTEEL.NS', 'ADANIENT.NS', 'COALINDIA.NS'])
-
-
-# In[ ]:
 
 
 
