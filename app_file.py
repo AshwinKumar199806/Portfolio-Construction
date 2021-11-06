@@ -59,8 +59,7 @@ def main():
     st.subheader("Return and Risk of Individual Stocks")
     figs,returns,risks,risklevel,assets=Equal.figure(int_features)
     st.dataframe(assets)      
-    link = '[GitHub](http://github.com)'
-    st.markdown(link, unsafe_allow_html=True)
+ 
 
 if __name__ == "__main__":
     main()  
