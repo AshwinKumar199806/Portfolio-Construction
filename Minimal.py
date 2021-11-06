@@ -73,7 +73,6 @@ def figure(tickers):
     return fig,min_vol_port['Returns']*100,min_vol_port['Volatility'],risklevel,assets
 
 
-figure(['TATASTEEL.NS', 'HINDALCO.NS', 'JSWSTEEL.NS', 'ADANIENT.NS', 'COALINDIA.NS'])
 
 
 
