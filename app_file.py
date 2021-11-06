@@ -56,7 +56,7 @@ def main():
         st.error("Risk level is "+str(risklevel)) 
         st.success("Expected Return of the Portfolio in Percentage: "+str(np.round(returns,2)))
         buf.close() 
-    if st.checkbox("Click here to see the Expected Return and Volatility of Individual Stocks")
+    if st.checkbox("Click here to see the Expected Return and Volatility of Individual Stocks"):
         st.subheader("Expected Return and Volatility of Individual Stocks")
         figs,returns,risks,risklevel,assets=Equal.figure(int_features)
         st.dataframe(assets)      
