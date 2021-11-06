@@ -1,7 +1,8 @@
 # Portfolio-Construction
-Construction of portfolio of stocks with two different optimization approaches
+Construction of portfolio of stocks with two different optimization approaches and equal weight approach
 
-Minimum Variance Portfolio and Optimal Risk Portfolio can be constructed for the group of stocks taken into consideration using this application.
-Equal Weight Portfolio and Annual Volatality and Returns of Individual Stocks are provided for comparison
+Minimum Variance Portfolio, Optimal Risk Portfolio, Equal Weight Portfolio can be constructed for the group of stocks taken into consideration using this application.
+
+Annual Volatility and Returns of Individual Stocks & Expected Return and Volatility of the Portfolio has been calculated to compare and contrast. 
 
 Link : https://share.streamlit.io/ashwinkumar199806/portfolio-construction/main/app_file.py
