@@ -16,7 +16,7 @@ def main():
     st.write("Only enter the tickers of stocks which are listed in NSE")
     stocks = st.text_area(label = "Stocks")
     a=stocks.split(',')
-    int_features = [str(x)+".NS" for x in a
+    int_features = [str(x)+".NS" for x in a]
     if st.checkbox("Equal Weight Portfolio"):
         figs,returns,risks,risklevel,assets=Equal.figure(int_features)
         buf = io.BytesIO()
