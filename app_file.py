@@ -28,7 +28,7 @@ def main():
         st.subheader("Return and Risk of the Portfolio")
         st.error("Volatility of the Portfolio: "+str(np.round(risks,2)))
         st.error("Risk level is "+str(risklevel)) 
-        st.success("Expected Return of the Portfolio in Percentage: "+str(np.round(returns,2)))
+        st.success("Expected Return of the Portfolio in percentage: "+str(np.round(returns,2)))
         buf.close() 
     if st.checkbox("Optimal Risk Portfolio"):
         figs,returns,risks,risklevel,assets=Optimal.figure(int_features)
@@ -41,7 +41,7 @@ def main():
         st.subheader("Return and Risk of the Portfolio")
         st.error("Volatility of the Portfolio: "+str(np.round(risks,2)))
         st.error("Risk level is "+str(risklevel)) 
-        st.success("Expected Return of the Portfolio in Percentage: "+str(np.round(returns,2)))
+        st.success("Expected Return of the Portfolio in percentage: "+str(np.round(returns,2)))
         buf.close()
 
     if st.checkbox("Click here to see the Expected Return and Volatility of Individual Stocks"):
